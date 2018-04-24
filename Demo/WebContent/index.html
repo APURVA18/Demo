@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Demo/static/css/w3.css">
+<link rel="stylesheet" href="/Demo/static/css/min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#" class="w3-button w3-bar-item">Men</a>
+  <a href="#" class="w3-button w3-bar-item">Women</a>
+  <a href="#" class="w3-button w3-bar-item">Kids</a>
+  <a href="#" class="w3-button w3-bar-item">About</a>
+</nav>
+
+<!--Search-->
+<div class="topnav">
+    <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Slide Show 
+<section>
+  <img class="mySlides" src="/Demo/images/1.jpg"  style="width:100%">
+  
+  <img class="mySlides" src="/Demo/images/3.jpg"  style="width:100%">
+</section> -->
+<!--  
+<article class="article">
+  
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+</article> -->
+
+<form action="/Demo/first.html" method="get" id="form1">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+</form>
+
+<button type="submit" form="form1" value="Submit">Submit</button>
+
+
+<!-- Products -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <a href="click1.jsp">
+    <img src="/Demo/images/1.jpg" alt="Puma" style="width:100%">
+    </a>
+    <p>Puma</p>
+  </article>
+  <article class="w3-third">
+    <a href="click1.jsp">
+    <img src="/Demo/images/2.jpg" alt="Nike" style="width:100%">
+    </a>
+    <p>Nike</p>
+  </article>
+  <article class="w3-third">
+    <a href="click1.jsp">
+    <img src="/Demo/images/3.jpg" alt="Addidas" style="width:100%">
+    </a>
+    <p>Addidas</p>
+  </article>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="www.flipkart.com" target="_blank">flipkarts</a>
+  </p>
+</footer>
+
+<script>
+var myIndex = 0;
+slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 3000);
+}
+</script>
+
+</body>
+</html>
+
